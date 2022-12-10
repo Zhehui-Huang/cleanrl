@@ -1,4 +1,3 @@
-python -c "import mujoco_py"
 xvfb-run -a python -m sample_factory.launcher.run \
 --run=benchmark.slurm.train_mujoco --backend=slurm \
 --slurm_workdir=slurm_output \
