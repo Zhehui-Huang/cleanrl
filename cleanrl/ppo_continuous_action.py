@@ -20,8 +20,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--experiment", type=str, default=os.path.basename(__file__).rstrip(".py"),
         help="the name of this experiment")
-    parser.add_argument("--train_dir", type=str, default=os.path.basename(__file__).rstrip(".py"),
-        help="the name of this trair dir")
+    parser.add_argument("--train_dir", default=os.path.join(os.getcwd(), "train_dir"), type=str,
+        help="Root for all experiments")
     parser.add_argument("--seed", type=int, default=1,
         help="seed of the experiment")
     parser.add_argument("--torch-deterministic", type=lambda x: bool(strtobool(x)), default=True, nargs="?", const=True,
