@@ -18,7 +18,7 @@ from torch.utils.tensorboard import SummaryWriter
 def parse_args():
     # fmt: off
     parser = argparse.ArgumentParser()
-    parser.add_argument("--experiment", type=str, default=os.path.basename(__file__).rstrip(".py"),
+    parser.add_argument("--experiment", "exp-name", type=str, default=os.path.basename(__file__).rstrip(".py"),
         help="the name of this experiment")
     parser.add_argument("--train_dir", default=os.path.join(os.getcwd(), "train_dir"), type=str,
         help="Root for all experiments")
