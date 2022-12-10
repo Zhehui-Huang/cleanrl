@@ -12,7 +12,7 @@ MUJOCO_BASELINE = (
 
 _params = ParamGrid([
     ("seed", [0]),
-    ("env-id", ["InvertedPendulum-v4", "InvertedDoublePendulum-v4"]),
+    ("env-id", ["InvertedPendulum-v2", "InvertedDoublePendulum-v2"]),
 ])
 
 _experiment = Experiment(
