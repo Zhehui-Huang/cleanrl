@@ -141,8 +141,11 @@ if __name__ == "__main__":
     if args.track:
         import wandb
 
+        wandb_group = 'cleanrl-' + args.env_id
+
         wandb.init(
             project=args.wandb_project_name,
+            group=wandb_group,
             entity=args.wandb_entity,
             sync_tensorboard=True,
             config=vars(args),

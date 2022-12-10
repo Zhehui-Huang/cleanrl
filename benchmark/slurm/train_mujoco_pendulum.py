@@ -5,8 +5,8 @@ MUJOCO_BASELINE = (
     'python -m cleanrl.ppo_continuous_action '
     '--total-timesteps=100000000 --num-envs=64 --anneal-lr=True --clip-vloss=False --ent-coef=0 '
     '--learning-rate=0.00295 --max-grad-norm=3.5 --num-minibatches=4 --num-steps=64 --update-epochs=2 --vf-coef=1.3 '
-    '--track --wandb-project-name mujoco-cleanrl '
-    ' --wandb_entity=multi-drones --wandb_group=zh-reward-decrease'
+    '--track --capture-video --wandb-project-name mujoco-cleanrl '
+    ' --wandb-entity=multi-drones --wandb-project-name=zh-reward-decrease'
 )
 
 
